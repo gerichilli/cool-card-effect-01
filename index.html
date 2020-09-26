@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card Hover Effect 01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style media="screen">
+    *{
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   body {
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      position: relative;
+      max-width: 1100px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container .card {
+      position: relative;
+      max-width: 280px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      margin: 30px 20px;
+      padding: 20px 10px;
+      background: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .container .card:hover {
+      height: 460px;
+    }
+
+    .container .card .card-img {
+      position: relative;
+      width: 240px;
+      height: 240px;
+      top: 10px;
+      z-index: 1;
+    }
+
+    .container .card .card-img img {
+      max-width: 100%;
+      border-radius: 4px;
+      border: 1px solid #fff;
+    }
+
+    .container .card .card-content {
+      position: relative;
+      top: -20px;
+      font-size: 90%;
+      color: #000;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .container .card .card-content h2 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .container .card:hover .card-content {
+      visibility: visible;
+      opacity: 1;
+      top: 25px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="card-hover-fx">
+      <div class="container">
+        <div class="card">
+          <div class="card-img">
+            <img src="images/card1.jpg" alt="Hong hac">
+          </div>
+          <div class="card-content">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="images/card2.jpg" alt="Hong hac">
+          </div>
+          <div class="card-content">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="images/card3.jpg" alt="Hong hac">
+          </div>
+          <div class="card-content">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
